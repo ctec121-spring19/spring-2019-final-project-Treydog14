@@ -2,7 +2,7 @@
 #
 # For TicTacToe
 
-import View
+from View import View
 
 class Model:
 

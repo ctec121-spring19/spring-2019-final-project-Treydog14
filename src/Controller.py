@@ -6,14 +6,14 @@ import View
 import Model
 
 class Controller:
-
     def __init__(self):
-        # delete and enter your code here
-        pass
+       self.player = "X"
 
 def ControllerTest():
-    # delete and enter your code here
-    pass
+    v.message("Tic-Tac-Toe")
+    while True:
+        ch = win.getMouse()
+        draw
 
 if __name__ == "__main__":
     ControllerTest()
