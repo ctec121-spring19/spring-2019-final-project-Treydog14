@@ -9,6 +9,7 @@ class View:
     def __init__(self):
         self.win = GraphWin("Tic-Tac-Toe Grid", 600, 600)
         self.win.setCoords(0, 0, 3, 3)
+        self.objectsList = []
     
         Line(Point(1, 0), Point(1, 3)).draw(self.win)
         Line(Point(2, 0), Point(2, 3)).draw(self.win)
@@ -18,16 +19,20 @@ class View:
 
     
     def drawO(self, cellNum):
-        self.circ = Circle()
-        self.circ.draw(self.win)
+        x = cellNum %3
+        y = cellNum //3
+        x,y = (1,1)
+        circ = Circle()
+        circ.setFill()
+        circ.draw(self.win)
+        self.objectsList.append(circ)
 
-    def method(self):
-        self.drawO(self.win)
+
 
 
 def ViewTest():
 
-    viewLot = View()
+    viewGrid = View()
     input()
 
     

@@ -7,12 +7,18 @@ from View import View
 class Model:
 
     def __init__(self):
-        # delete and enter your code here
-        pass
+        self.v
+        self.cellList = ['e', 'e', 'e', 'e', 'e', 'e', 'e', 'e', 'e']   
+    
+def play(self, player, cellNum):
+    if player == 'x':
+        self.v.drawX(cellNum)
+    else:
+        self.v.drawO(cellNum)
+
+self.cellList[cellNum] = player
 
 def ModelTest():
-    # delete and enter your code here
-    pass
-
-if __name__ == "__main__":
-    ModelTest()
+    
+    if __name__ == "__main__":
+ModelTest()

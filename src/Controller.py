@@ -7,13 +7,14 @@ import Model
 
 class Controller:
     def __init__(self):
-       self.player = "X"
+       self.player = 'x'
 
 def ControllerTest():
-    v.message("Tic-Tac-Toe")
     while True:
-        ch = win.getMouse()
-        draw
+        if player == 'x':
+            player = 'o'
+    else:
+        player = 'x'
 
 if __name__ == "__main__":
     ControllerTest()

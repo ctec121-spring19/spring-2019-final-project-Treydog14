@@ -5,8 +5,7 @@
 import Controller
 
 def main():
-    controller = Controller()
-
-    controller.playGame()
+    controller = Controller
+    controller.playGame
 
 main()
