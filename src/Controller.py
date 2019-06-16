@@ -12,7 +12,7 @@ class Controller:
         self.play_game()
     
     def clicked_board(self):
-        mouseX, mouseY = pygame.mouse.get_pos()  # Makes mouseX and mouseY equal to the coordinates of the mouse
+        mouseX, mouseY = Game.mouse.get_pos()  # Makes mouseX and mouseY equal to the coordinates of the mouse
         row, col = self.Game.find_cell(mouseX, mouseY) # board_position returns which row and column the user clicked in
 
         if self.Game.cell_occupied(col, row): # Checks to see if the space is full
