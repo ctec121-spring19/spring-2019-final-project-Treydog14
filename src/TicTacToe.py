@@ -2,10 +2,11 @@
 #
 # 
 
-import Controller
+from Controller import Controller
 
 def main():
-    controller = Controller
-    controller.playGame
+    controller = Controller()
+    controller.play_game()
 
-main()
+if __name__ == "__main__":
+    main()
