@@ -37,7 +37,7 @@ class Controller:
             self.Graphics.update_board() # Redraws the board
 
     def check_for_event(self):
-        for event in Game.event.get(): # Finds events that are currently queued up
+        for event in event.get(): # Finds events that are currently queued up
             if event.type == Game.QUIT:  # If the window close button is pressed
                 Game.quit()
                 sys.exit()
